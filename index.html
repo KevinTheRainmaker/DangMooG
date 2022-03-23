@@ -2,6 +2,7 @@
   <head>
     <title>당무지</title>
     <link href="index.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div id="header">
@@ -19,53 +20,44 @@
     <div id="footer"></div>
   </body>
   <script>
-    var products = [
-      {
-        name: "농구공 1호",
-        price: 50000,
-        seller: "킹동영",
-        imageUrl: "images/products/basketball1.jpeg",
-      },
-      {
-        name: "축구공 1호",
-        price: 60000,
-        seller: "킹동영",
-        imageUrl: "images/products/soccerball1.jpg",
-      },
-      {
-        name: "키보드",
-        price: 120000,
-        seller: "킴동우",
-        imageUrl: "images/products/keyboard2.jpg",
-      },
-    ];
-    let productsHTML = "";
+    axios
+      .get(
+        "https://27da2dc2-ec1b-421c-a777-d9405b100499.mock.pstmn.io/products"
+      )
+      .then(function (result) {
+        console.log("통신 결과: ", result);
+        const products = result.data.products;
+        let productsHTML = "";
 
-    for (var i = 0; i < products.length; i++) {
-      productsHTML +=
-        '<div class="product-card">' +
-        "<div>" +
-        '<img class="product-img" src="' +
-        products[i].imageUrl +
-        '" />' +
-        "</div>" +
-        '<div class="product-contents">' +
-        '<span class="product-name">' +
-        products[i].name +
-        "</span>" +
-        '<span class="product-price">' +
-        products[i].price +
-        "원" +
-        "</span>" +
-        '<div class="product-seller">' +
-        '<img class="product-avatar" src="images/icons/avatar.png" />' +
-        "<span>" +
-        products[i].seller +
-        "</span>" +
-        "</div>" +
-        "</div>" +
-        "</div>";
-    }
-    document.querySelector("#product-list").innerHTML = productsHTML;
+        for (var i = 0; i < products.length; i++) {
+          productsHTML +=
+            '<div class="product-card">' +
+            "<div>" +
+            '<img class="product-img" src="' +
+            products[i].imageUrl +
+            '" />' +
+            "</div>" +
+            '<div class="product-contents">' +
+            '<span class="product-name">' +
+            products[i].name +
+            "</span>" +
+            '<span class="product-price">' +
+            products[i].price +
+            "원" +
+            "</span>" +
+            '<div class="product-seller">' +
+            '<img class="product-avatar" src="images/icons/avatar.png" />' +
+            "<span>" +
+            products[i].seller +
+            "</span>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+        }
+        document.querySelector("#product-list").innerHTML = productsHTML;
+      })
+      .catch(function (error) {
+        console.error("에러 발생: ", error);
+      });
   </script>
 </html>
