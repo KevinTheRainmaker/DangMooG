@@ -1,3 +1,9 @@
+## v0.3.1 (2022-03-27)
+
+### Refactor
+
+- revise files related to CHANGELOG
+
 ## v0.3.0 (2022-03-27)
 
 ### Refactor
