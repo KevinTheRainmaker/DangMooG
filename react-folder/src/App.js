@@ -16,7 +16,7 @@ function App() {
           <UploadPageComponent />
         </Route>
 
-        <Route exact={true} path={"/product"}>
+        <Route exact={true} path={"/product/:id"}>
           <ProductPageComponent />
         </Route>
       </Switch>

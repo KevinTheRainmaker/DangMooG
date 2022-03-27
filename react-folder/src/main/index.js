@@ -33,7 +33,7 @@ function MainPage() {
           {products.map(function (product, index) {
             return (
               <div className="product-card">
-                <Link className="product-link" to={"/product"}>
+                <Link className="product-link" to={`/product/${index}`}>
                   <div>
                     <img className="product-img" src={product.imageUrl} />
                   </div>
