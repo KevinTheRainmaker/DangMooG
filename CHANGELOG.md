@@ -1,3 +1,9 @@
+## v0.4.0 (2022-03-27)
+
+### Feat
+
+- **main**: set product link css
+
 ## v0.3.1 (2022-03-27)
 
 ### Refactor
