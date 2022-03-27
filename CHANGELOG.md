@@ -1,3 +1,9 @@
+## v0.5.0 (2022-03-27)
+
+### Feat
+
+- **product-page**: set id on product page
+
 ## v0.4.0 (2022-03-27)
 
 ### Feat
