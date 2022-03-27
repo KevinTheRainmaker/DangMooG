@@ -65,6 +65,12 @@
 .product-avatar {
   width: 30px;
 }
+
+.product-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 #footer {
   height: 200px;
   background-color: rgb(230, 230, 230);
