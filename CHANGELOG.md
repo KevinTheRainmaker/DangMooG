@@ -2,7 +2,8 @@
 
 ### Feat
 
-- **main**: set product link css
+- **main/js**: set link to product page
+- **main/css**: set product link css
 
 ## v0.3.1 (2022-03-27)
 
