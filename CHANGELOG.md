@@ -3,6 +3,7 @@
 ### Refactor
 
 - revise files related to CHANGELOG
+- **src/main/index.css**: 300% to 100vh
 
 ## v0.3.0 (2022-03-27)
 
