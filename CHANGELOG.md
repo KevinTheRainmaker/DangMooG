@@ -1,3 +1,9 @@
+## v0.5.1 (2022-03-28)
+
+### Fix
+
+- **react-router-dom**: install direction error
+
 ## v0.5.0 (2022-03-27)
 
 ### Feat
