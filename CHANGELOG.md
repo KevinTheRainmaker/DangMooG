@@ -1,3 +1,9 @@
+## v0.6.0 (2022-03-29)
+
+### Feat
+
+- **product-page**: make detail page baseline
+
 ## v0.5.1 (2022-03-28)
 
 ### Fix
