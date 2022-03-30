@@ -19,7 +19,7 @@ body,
   align-items: center;
 }
 
-#header-area > img {
+#header-area img {
   width: 128px;
   height: 36px;
 }

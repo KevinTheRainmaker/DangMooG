@@ -3,13 +3,15 @@ import MainPageComponent from "./main/index.js";
 import UploadPageComponent from "./upload/index.js";
 import ProductPageComponent from "./product/index.js";
 
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div>
       <div id="header">
         <div id="header-area">
-          <img src="/images/icons/logo.png" />
+          <Link to="/">
+            <img src="/images/icons/logo.png" />
+          </Link>
         </div>
       </div>
       <div id="body">
