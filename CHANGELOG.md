@@ -1,3 +1,9 @@
+## v0.7.1 (2022-03-30)
+
+### Fix
+
+- **logo**: put in App.css and revise tag that missused
+
 ## v0.7.0 (2022-03-30)
 
 ### Feat
