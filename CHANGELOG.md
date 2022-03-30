@@ -8,7 +8,7 @@
 
 ### Fix
 
-- **react-router-dom**: install direction error
+- **react-router-dom**: install directory miss
 
 ## v0.5.0 (2022-03-27)
 
