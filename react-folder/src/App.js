@@ -9,7 +9,7 @@ function App() {
     <div>
       <div id="header">
         <div id="header-area">
-          <image src="/images/icons/logo.png" />
+          <img src="/images/icons/logo.png" />
         </div>
       </div>
       <div id="body">

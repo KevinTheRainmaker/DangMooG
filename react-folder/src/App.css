@@ -12,6 +12,18 @@ body,
   border-bottom: 1px solid rgb(94, 94, 94);
 }
 
+#header-area {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#header-area > img {
+  width: 128px;
+  height: 36px;
+}
+
 #body {
   height: 100vh;
   width: 1024px;
