@@ -1,3 +1,9 @@
+## v0.8.0 (2022-03-30)
+
+### Feat
+
+- add link to main page on logo
+
 ## v0.7.1 (2022-03-30)
 
 ### Fix
