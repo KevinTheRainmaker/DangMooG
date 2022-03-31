@@ -1,10 +1,13 @@
+import "antd/dist/antd.css";
 import "./App.css";
 import MainPageComponent from "./main/index.js";
 import UploadPageComponent from "./upload/index.js";
 import ProductPageComponent from "./product/index.js";
-
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
+import { Button } from "antd";
+import { UploadOutlined } from "@ant-design/icons";
 function App() {
+  const history = useHistory();
   return (
     <div>
       <div id="header">
@@ -12,6 +15,16 @@ function App() {
           <Link to="/">
             <img src="/images/icons/logo.png" />
           </Link>
+          <Button
+            size="large"
+            shape="round"
+            onClick={function () {
+              history.push("/upload");
+            }}
+            icon={<UploadOutlined />}
+          >
+            상품 업로드
+          </Button>
         </div>
       </div>
       <div id="body">
