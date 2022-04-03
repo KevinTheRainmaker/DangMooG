@@ -32,7 +32,7 @@ function ProductPage() {
       </div>
       <div id="contents-box">
         <div id="name">{product.name}</div>
-        <div id="price">{product.price}원</div>
+        <div id="price">{product.price.toLocaleString("ko-KR")}원</div>
         <div id="createdAt">2022.03.30</div>
         <div id="description">{product.description}</div>
       </div>

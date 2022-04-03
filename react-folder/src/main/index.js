@@ -32,7 +32,9 @@ function MainPage() {
                 </div>
                 <div className="product-contents">
                   <span className="product-name">{product.name}</span>
-                  <span className="product-price">{product.price}원</span>
+                  <span className="product-price">
+                    {product.price.toLocaleString("ko-KR")}원
+                  </span>
                   <div className="product-seller">
                     <img
                       className="product-avatar"
