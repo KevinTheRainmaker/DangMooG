@@ -1,9 +1,3 @@
-## v0.11.0 (2022-04-03)
-
-### Feat
-
-- **node-server**: simple server using node
-
 ## v0.10.0 (2022-03-31)
 
 ### Feat
