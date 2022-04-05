@@ -5,7 +5,7 @@ var port = 8080;
 const server = http.createServer(function (req, res) {
   const path = req.url;
   const method = req.method;
-  if (path === "/product") {
+  if (path === "/products") {
     if (method === "GET") {
       res.writeHead(200, { "Content-Type": "application/json" });
       const product = JSON.stringify([

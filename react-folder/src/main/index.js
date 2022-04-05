@@ -6,14 +6,10 @@ import { Link } from "react-router-dom";
 function MainPage() {
   const [products, setProducts] = React.useState([]);
   React.useEffect(function () {
-    axios
-      .get(
-        "https://27da2dc2-ec1b-421c-a777-d9405b100499.mock.pstmn.io/products"
-      )
-      .then(function (result) {
-        const products = result.data.products;
-        setProducts(products);
-      });
+    axios.get("http://localhost:8080/products").then(function (result) {
+      const products = result.data.products;
+      setProducts(products);
+    });
   }, []);
 
   return (
