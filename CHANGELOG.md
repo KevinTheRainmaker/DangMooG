@@ -2,7 +2,7 @@
 
 ### Feat
 
-- **DB:-SQLite3**: create product DB
+- **DB:SQLite3**: create product DB
 
 ## v0.13.0 (2022-04-05)
 
