@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const models = require("./models");
 const app = express();
 const port = 8080;
 
@@ -51,4 +52,14 @@ app.get("/products/:id", (req, res) => {
 
 app.listen(port, () => {
   console.log("Server Running");
+  models.sequelize
+    .sync()
+    .then(() => {
+      console.log("DB Connected");
+    })
+    .catch(function (err) {
+      console.error(err);
+      console.log("DB Connection Error");
+      process.exit();
+    });
 });
