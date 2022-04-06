@@ -43,6 +43,12 @@ app.post("/products", (req, res) => {
   });
 });
 
+app.get("/products/:id", (req, res) => {
+  const params = req.params;
+  const { id } = params;
+  res.send(`id: ${id}`);
+});
+
 app.listen(port, () => {
   console.log("Server Running");
 });
