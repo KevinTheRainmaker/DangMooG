@@ -1,3 +1,9 @@
+## v0.16.0 (2022-04-08)
+
+### Feat
+
+- **Check-API**: create Product-check API & test it
+
 ## v0.15.0 (2022-04-08)
 
 ### Feat
