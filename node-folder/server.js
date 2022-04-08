@@ -39,9 +39,27 @@ app.get("/products", (req, res) => {
 
 app.post("/products", (req, res) => {
   const body = req.body;
-  res.send({
-    body,
-  });
+  const { name, price, seller, description, imageUrl } = body;
+  if (!name || !price || !seller || !imageUrl) {
+    return res.send("Please fill all field");
+  }
+  models.Product.create({
+    name,
+    price,
+    seller,
+    description,
+    imageUrl,
+  })
+    .then((result) => {
+      console.log(result);
+      res.send({
+        result,
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      res.send("Upload Failed");
+    });
 });
 
 app.get("/products/:id", (req, res) => {
