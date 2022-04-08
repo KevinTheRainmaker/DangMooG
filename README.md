@@ -32,7 +32,6 @@
 
 > 배정윤 (DGIST,17) - 22.04.07 합류
 
-
 ---
 
 ## 회의록
@@ -40,12 +39,11 @@
 > 22.04.07 5:45PM ~ 7:00PM
 
 - 2 Track으로 진행
-> 
-    Track 1. 상시 운영되는 개인간 중고거래 장터
-    Track 2. 시즌별로 운영되는 하우스 주관 장터: 창고 개방 및 거래 중개   
->
+  >
+      Track 1. 상시 운영되는 개인간 중고거래 장터
+      Track 2. 시즌별로 운영되는 하우스 주관 장터: 창고 개방 및 거래 중개
+  >
 - 일단은 중고거래 자체에 집중 후 공동구매, 택시동승자 모집 등 추가 기능은 추후에 논의하여 확장하는 걸로
-
 
 ---
 
@@ -55,8 +53,22 @@ https://github.com/KevinTheRainmaker/DangMooG/blob/main/CHANGELOG.md
 
 ## Error Archive
 
+---
+
 ```
 $ npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
 ```
 
 > sudo chown -R 맥북유저이름: 에러경로
+
+---
+
+```
+$ Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+```
+
+> 방어 코드에 의해 res.send가 동작했으나 이후 catch문 내 res.send에 의해 다른 응답을 보내려고 시도하게 되어 서버가 충돌하며 발생하는 에러
+
+> 방어코드 내 res.send에 return을 추가해주면 된다.
+
+---
