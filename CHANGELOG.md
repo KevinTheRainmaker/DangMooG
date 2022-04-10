@@ -1,3 +1,9 @@
+## v0.18.1 (2022-04-10)
+
+### Fix
+
+- **image-ratio**: control product img with object-fit: scale-down
+
 ## v0.18.0 (2022-04-10)
 
 ### Feat
