@@ -1,3 +1,9 @@
+## v0.18.0 (2022-04-10)
+
+### Feat
+
+- **product-date**: display product date on prodict card by using dayjs
+
 ## v0.17.1 (2022-04-10)
 
 ### Perf
