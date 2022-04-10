@@ -1,3 +1,9 @@
+## v0.17.0 (2022-04-10)
+
+### Feat
+
+- **detail-view-API**: create detail view API & seperate from read-all API
+
 ## v0.16.0 (2022-04-08)
 
 ### Feat
