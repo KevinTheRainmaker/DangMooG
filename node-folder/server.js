@@ -8,7 +8,10 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/products", (req, res) => {
-  models.Product.findAll()
+  models.Product.findAll({
+    order: [["createdAt", "DESC"]],
+    attributes: ["id", "name", "price", "createdAt", "seller"],
+  })
     .then((result) => {
       console.log(result);
       res.send({
@@ -49,7 +52,21 @@ app.post("/products", (req, res) => {
 app.get("/products/:id", (req, res) => {
   const params = req.params;
   const { id } = params;
-  res.send(`id: ${id}`);
+  models.Product.findOne({
+    where: {
+      id: id,
+    },
+  })
+    .then((result) => {
+      console.log(result);
+      res.send({
+        product: result,
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      res.send("Read Product Failed");
+    });
 });
 
 app.listen(port, () => {
