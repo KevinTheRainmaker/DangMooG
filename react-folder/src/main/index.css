@@ -24,6 +24,7 @@
   height: 210px;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 12px;
+  object-fit: scale-down;
 }
 
 .product-contents {
