@@ -1,11 +1,21 @@
-import { Button, Divider, Form, Input, InputNumber, Upload } from "antd";
+import {
+  Button,
+  Divider,
+  Form,
+  Input,
+  InputNumber,
+  Upload,
+  message,
+} from "antd";
 import { useState } from "react";
 import "./index.css";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 import { API_URL } from "../config/constant.js";
 
 function UploadPage() {
   const [imageUrl, setImageUrl] = useState(null);
+  const history = useHistory();
   const onSubmit = (values) => {
     axios
       .post(`${API_URL}/products`, {
@@ -17,6 +27,12 @@ function UploadPage() {
       })
       .then((result) => {
         console.log(result);
+        message.success(`product is successfully uploaded`);
+        history.replace("/");
+      })
+      .catch((error) => {
+        console.log(error);
+        message.error(`${error.message}`);
       });
   };
   const onChangeImage = (info) => {
