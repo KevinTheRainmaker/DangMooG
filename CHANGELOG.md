@@ -1,3 +1,9 @@
+## v0.19.0 (2022-04-11)
+
+### Feat
+
+- **upload-function**: add uploading feature
+
 ## v0.18.1 (2022-04-10)
 
 ### Fix
