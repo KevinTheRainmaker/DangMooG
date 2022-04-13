@@ -1,3 +1,9 @@
+## v0.20.0 (2022-04-13)
+
+### Feat
+
+- **sold-out**: add sold out column to DB
+
 ## v0.19.1 (2022-04-11)
 
 ### Fix
