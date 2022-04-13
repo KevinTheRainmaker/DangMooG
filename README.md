@@ -51,6 +51,20 @@
 
 https://github.com/KevinTheRainmaker/DangMooG/blob/main/CHANGELOG.md
 
+---
+
+## API Docs
+
+| Index | Method | URI           | Description                                   |
+| ----- | ------ | ------------- | --------------------------------------------- |
+| 1     | GET    | /products     | 모든 상품을 생성일자 역순으로 정렬하여 가져옴 |
+| 2     | POST   | /products     | 상품 업로드                                   |
+| 3     | GET    | /products/:id | 특정 id의 상품을 가져옴                       |
+| 4     | POST   | /image        | 상품 이미지 등록                              |
+| 5     |
+
+---
+
 ## Error Archive
 
 ---
