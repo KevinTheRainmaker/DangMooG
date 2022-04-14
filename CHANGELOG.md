@@ -1,3 +1,9 @@
+## v0.21.0 (2022-04-14)
+
+### Feat
+
+- **sold-out-blur**: if product sold out, become blur
+
 ## v0.20.0 (2022-04-13)
 
 ### Feat
