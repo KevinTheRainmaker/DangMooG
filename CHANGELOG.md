@@ -1,3 +1,9 @@
+## v0.21.1 (2022-04-17)
+
+### Fix
+
+- **soldout-disable**: soldout is added in GET/ attributs & split click-disable
+
 ## v0.21.0 (2022-04-14)
 
 ### Feat
