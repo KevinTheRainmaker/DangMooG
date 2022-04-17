@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./index.css";
 import dayjs from "dayjs";
 import { API_URL } from "../config/constant.js";
+import { Button } from "antd";
 
 function ProductPage() {
   const { id } = useParams();
@@ -37,6 +38,9 @@ function ProductPage() {
         <div id="createdAt">
           {dayjs(product.createdAt).format("YYYY년 MM월 DD일")}
         </div>
+        <Button id="chatting-button" size="large" type="primary" danger>
+          채팅으로 문의하기
+        </Button>
         <pre id="description">{product.description}</pre>
       </div>
     </div>
