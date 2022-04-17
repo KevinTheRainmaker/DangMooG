@@ -28,7 +28,7 @@ function MainPage() {
           return (
             <div className="product-card">
               {product.soldout === 1 && <div className="product-blur" />}
-              {/* <div className="product-blur" /> */}
+              {product.soldout === 1 && <div className="click-disable" />}
               <Link
                 style={{ color: "inherit" }}
                 className="product-link"

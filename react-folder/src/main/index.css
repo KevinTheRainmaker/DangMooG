@@ -27,6 +27,9 @@
   right: 0;
   bottom: 0;
   background-color: #ffffffaa;
+}
+
+.click-disable {
   pointer-events: none;
 }
 
