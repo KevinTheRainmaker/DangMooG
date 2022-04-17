@@ -1,3 +1,9 @@
+## v0.23.0 (2022-04-17)
+
+### Feat
+
+- **banner**: sliding banner limit 3
+
 ## v0.22.0 (2022-04-17)
 
 ### Feat
