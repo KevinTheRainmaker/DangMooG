@@ -61,7 +61,7 @@ https://github.com/KevinTheRainmaker/DangMooG/blob/main/CHANGELOG.md
 | 2     | POST   | /products     | 상품 업로드                                   |
 | 3     | GET    | /products/:id | 특정 id의 상품을 가져옴                       |
 | 4     | POST   | /image        | 상품 이미지 등록                              |
-| 5     |
+| 5     | GET    | /banners      | 배너 이미지 불러오기                          |
 
 ---
 
