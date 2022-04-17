@@ -1,3 +1,9 @@
+## v0.22.0 (2022-04-17)
+
+### Feat
+
+- **chat-button**: implement chat button on detail page
+
 ## v0.21.1 (2022-04-17)
 
 ### Fix
