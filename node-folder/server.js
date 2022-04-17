@@ -20,10 +20,9 @@ app.use(cors());
 app.use("/uploads", express.static("uploads"));
 
 app.get("/banners", (req, res) => {
-  models.banner
-    .findAll({
-      limit: 3,
-    })
+  models.Banner.findAll({
+    limit: 3,
+  })
     .then((result) => {
       res.send({
         banners: result,

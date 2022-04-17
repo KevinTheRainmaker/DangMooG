@@ -31,12 +31,14 @@ function MainPage() {
 
   return (
     <div>
-      <Carousel>
+      <Carousel autoplay autoplaySpeed={3000}>
         {banners.map((banner, index) => {
           return (
-            <div id="banner">
-              <img src={`${API_URL}/${banner.imageUrl}`} />
-            </div>
+            <Link to={banner.href}>
+              <div id="banner">
+                <img src={`${API_URL}/${banner.imageUrl}`} />
+              </div>
+            </Link>
           );
         })}
       </Carousel>
