@@ -1,3 +1,9 @@
+## v0.23.1 (2022-04-20)
+
+### Perf
+
+- **Responsive-Web-Design**: make web responsive by using media-query and min/max
+
 ## v0.23.0 (2022-04-17)
 
 ### Feat
