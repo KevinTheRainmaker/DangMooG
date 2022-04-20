@@ -86,3 +86,65 @@ $ Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the c
 > 방어코드 내 res.send에 return을 추가해주면 된다.
 
 ---
+
+```
+remote: Building source:
+remote:
+remote: -----> Building on the Heroku-20 stack
+remote: -----> Determining which buildpack to use for this app
+remote:  !     No default language could be detected for this app.
+remote:                         HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote:                         See https://devcenter.heroku.com/articles/buildpacks
+```
+
+> heroku에 node 서버를 배포하고자하였으나 에러가 발생하여 배포가 실패하였음
+> buildpack을 명시해주고자 다음 명령어 실행
+
+```
+heroku buildpacks:set heroku/nodejs
+```
+
+> 그러나 다음과 같은 에러 발생
+
+```
+remote: -----> Building on the Heroku-20 stack
+remote: -----> Using buildpack: heroku/nodejs
+remote: -----> App not compatible with buildpack: https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz
+remote:
+remote:  !     ERROR: Application not supported by 'heroku/nodejs' buildpack
+remote:  !
+remote:  !     The 'heroku/nodejs' buildpack is set on this application, but was
+remote:  !     unable to detect a Node.js codebase.
+remote:  !
+remote:  !     A Node.js app on Heroku requires a 'package.json' at the root of
+remote:  !     the directory structure.
+remote:  !
+remote:  !     If you are trying to deploy a Node.js application, ensure that this
+remote:  !     file is present at the top level directory. This directory has the
+remote:  !     following files:
+remote:  !
+remote:  !     CHANGELOG.md
+remote:  !     LICENSE
+remote:  !     node-folder/
+remote:  !     pyproject.toml
+remote:  !     react-folder/
+remote:  !     README.md
+remote:  !
+remote:  !     If you are trying to deploy an application written in another
+remote:  !     language, you need to change the list of buildpacks set on your
+remote:  !     Heroku app using the 'heroku buildpacks' command.
+remote:  !
+remote:  !     For more information, refer to the following documentation:
+remote:  !     https://devcenter.heroku.com/articles/buildpacks
+remote:  !     https://devcenter.heroku.com/articles/nodejs-support#activation
+remote:
+remote:
+remote:        More info: https://devcenter.heroku.com/articles/buildpacks#detection-failure
+```
+
+> 아마 react 코드와 node 코드의 저장소가 분리되어 있지 않아 발생한 문제가 아닐까 생각됨
+> buildpack 제거
+
+```
+heroku buildpacks:remove heroku/nodejs
+```
