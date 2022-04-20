@@ -84,5 +84,10 @@
 }
 
 #banner {
-  height: 300px;
+  max-height: 300px;
+}
+
+#banner > img {
+  width: 100%;
+  max-height: 300px;
 }
