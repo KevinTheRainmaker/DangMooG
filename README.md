@@ -148,3 +148,9 @@ remote:        More info: https://devcenter.heroku.com/articles/buildpacks#detec
 ```
 heroku buildpacks:remove heroku/nodejs
 ```
+
+위 오류(?)를 처리하기 위해 서버와 클라이언트 폴더를 분리했고, Heroku와 Vercel을 이용하여 배포하였다.
+
+클라이언트 레포지토리: https://github.com/KevinTheRainmaker/DangMooG-client
+
+배포: https://dang-moo-g-client.vercel.app/
