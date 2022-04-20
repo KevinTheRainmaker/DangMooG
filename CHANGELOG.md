@@ -1,3 +1,9 @@
+## v0.23.2 (2022-04-20)
+
+### Refactor
+
+- server.js to index.js
+
 ## v0.23.1 (2022-04-20)
 
 ### Perf
