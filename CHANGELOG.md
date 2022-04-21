@@ -1,3 +1,9 @@
+## v0.24.0 (2022-04-21)
+
+### Feat
+
+- **mobilenet**: implement mobilenet on web
+
 ## v0.23.2 (2022-04-20)
 
 ### Refactor
