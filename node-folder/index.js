@@ -13,6 +13,7 @@ const upload = multer({
     },
   }),
 });
+const detectProduct = require("./helpers/detectProduct");
 const port = 8080;
 
 app.use(express.json());
@@ -74,23 +75,26 @@ app.post("/products", (req, res) => {
   if (!imageUrl) {
     return res.status(400).send("Please fill imageUrl");
   }
-  models.Product.create({
-    name,
-    price,
-    seller,
-    description,
-    imageUrl,
-  })
-    .then((result) => {
-      console.log(result);
-      res.send({
-        result,
-      });
+  detectProduct(imageUrl, (type) => {
+    models.Product.create({
+      name,
+      price,
+      seller,
+      description,
+      imageUrl,
+      type,
     })
-    .catch((error) => {
-      console.error(error);
-      res.status(400).send("Upload Failed");
-    });
+      .then((result) => {
+        console.log(result);
+        res.send({
+          result,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        res.status(400).send("Upload Failed");
+      });
+  });
 });
 
 app.get("/products/:id", (req, res) => {
