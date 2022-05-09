@@ -17,33 +17,42 @@
 ## 팀원
 
 > 고강빈 (GIST, 19) - Project Owner
+> 
 > 김동우 (GIST, 20) - 22.04.07 합류
+> 
 > 배정윤 (DGIST,17) - 22.04.07 합류
+> 
 > 김민국 (GIST, 16) - 22.05.14 합류
+> 
 > 장원식 (GIST, 18) - 22.05.14 합류
 
-### ML Engineer
+#### ML Engineer
 
 > 고강빈 (Lead)
+> 
 > 김동우
 
-### FE
+#### FE
 
 > 김민국 (Lead)
+> 
 > 고강빈
+> 
 > 김동우
 
-### BE
+#### BE
 
 > 장원식 (Lead)
+> 
 > 고강빈
+> 
 > 김동우
 
-### App Dev
+#### App Dev
 
 > 김민국
 
-### Designer
+#### Designer
 
 > 배정윤
 
