@@ -169,6 +169,15 @@
 
 <br>
 
+> 22.07.15 9:00PM ~ 10:30PM
+
+- 매주 회의 > 격주 회의로 변경 (다음 회의 7/29)
+- 로고 디자인 및 컬러 설정 (#C30020 / #FFFFFF / #ED6F63)
+
+<img src='https://user-images.githubusercontent.com/76294398/179354489-b3976a45-2bc6-40b0-8ec6-8e95361e86e0.png' width='100'>
+
+<br>
+
 ---
 
 ## CHANGELOG.md
