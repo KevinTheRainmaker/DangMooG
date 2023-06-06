@@ -22,8 +22,9 @@ def draw_phone_numbers():
     while len(selected_numbers) < 5:
         number = random.choice(phone_numbers)
         if number not in exclude_list and number not in selected_numbers:
-            selected_numbers.append(number)
-            # 추첨 결과 하나씩 업데이트
+            # 전화번호 가운데 4자리를 X로 대체
+            modified_number = number[:5] + "XXX" + number[8:]
+            selected_numbers.append(modified_number)
             result_label.configure(text="\n".join(selected_numbers))
             window.update()
             window.after(1000)  # 1초 대기
