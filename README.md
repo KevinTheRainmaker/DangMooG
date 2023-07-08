@@ -294,11 +294,17 @@ remote:        More info: https://devcenter.heroku.com/articles/buildpacks#detec
 heroku buildpacks:remove heroku/nodejs
 ```
 
-# 프로젝트 이전
-2023 무한도전 8기에 선발되면서 프로젝트를 이전함
-https://www.notion.so/dangmoog/7dc0ec3d753b4cfaab49f83782b58080
 위 오류(?)를 처리하기 위해 서버와 클라이언트 폴더를 분리했고, Heroku와 Vercel을 이용하여 배포하였다.
 
 ~클라이언트 레포지토리: https://github.com/KevinTheRainmaker/DangMooG-client~
 
 ~배포: https://dang-moo-g-client.vercel.app/~
+
+----
+----
+----
+
+# 프로젝트 이전
+2023 무한도전 8기에 선발되면서 프로젝트를 이전함
+
+각종 진행상황 기록: https://www.notion.so/dangmoog/7dc0ec3d753b4cfaab49f83782b58080
